@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/desktop.css" />
+		<script src="js/jquery.min.js"></script>
+		<script	src="./bootstrap/js/bootstrap.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/jquery.cycle.js"></script>
+		<link rel="stylesheet" href="./bootstrap/fonts/glyphicons-halflings-regular.ttf"/>
+	</head>
+	<body>
+	<script>
+		$( function(){
+			$("#slider ul").cycle({
+				fx:'fade',
+				speed:2000,
+				timeout:4000,
+				pager:'#pager',
+				pagerAnchorBuilder: function (index,DOMelement){
+				return '<a> </a>'
+				}
+			});
+		});
+	</script> 
+		<header>
+		<div class="desk">
+				<ul class="ul-cab">
+					<li id="menu"><button type="button" class="btn btn-danger btn-lg"><link rel="stylesheet" href="inicio.html" />INICIO</button> </li>
+					<li id="menu"><button type="button" class="btn btn-danger btn-lg"><link rel="stylesheet" href="sobre.html"/>SOBRE</button> </li>
+					<li id="menu"><button type="button" class="btn btn-danger btn-lg"><link rel="stylesheet" href="contato.html" />CONTATO</button></li>
+				</ul></div>
+			<div class="dropdown mobi">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					MENU
+					<span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li class="li-drop"><a href="inicio.html">INICIO</a></li>
+					<li class="li-drop"><a href="sobre.html">SOBRE</a></li>
+					<li class="li-drop"><a href="contato.html">CONTATO</a></li>
+				  </ul>
+			</div>
+			
+		</header>
+	<div class="imagem">     
+		<img src="./img/dog.jpg" class="img"/>
+	</div>	
+	<div id="logo2">
+		<img src="./img/gato.png">
+	</div>
+	<footer id="rodape">
+		<div>
+			<h5> Cefet-NF </h5>
+		</div>
+	</footer>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+@media(max-width:769px){
+	body{
+		width:425px;
+		height:474px;
+	}
+	#menu{
+				margin-left:0px;
+	}
+	.cabe,ul{
+		margin-left:0px;
+	}
+	#logo2{
+		
+	}
+}
